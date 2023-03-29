@@ -32,7 +32,7 @@ class BuildScrollContent extends StatelessWidget {
                     height: size.height * 0.005,
                     width: size.width * 0.3,
                     decoration: BoxDecoration(
-                        color: const Color(0XFF214DEA),
+                        color: const Color(0XFF19A7CE),
                         borderRadius: BorderRadius.circular(5)),
                   ),
                   const DetailInfo()

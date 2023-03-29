@@ -51,7 +51,7 @@ class _NavigationState extends State<Navigation> {
               padding: EdgeInsets.symmetric(
                   horizontal: size.width * 0.015, vertical: 12),
               duration: const Duration(milliseconds: 400),
-              tabBackgroundColor: const Color(0XFF214DEA),
+              tabBackgroundColor: const Color(0XFF19A7CE),
               color: Colors.black,
               tabs: const [
                 GButton(
@@ -87,49 +87,4 @@ class _NavigationState extends State<Navigation> {
       ),
     );
   }
-
-  // Widget buildNavbarItems(Size size, IconData iconActive,
-  //     IconData nonActiveIcon, String text, int index) {
-  //   return GestureDetector(
-  //     onTap: () {
-  //       setState(() {
-  //         _selectedItemIndex = index;
-  //       });
-  //     },
-  //     child: SizedBox(
-  //       height: 60,
-  //       width: size.width / 5,
-  //       child: Column(
-  //         mainAxisAlignment: MainAxisAlignment.center,
-  //         children: [
-  //           index == _selectedItemIndex
-  //               ? Icon(
-  //                   iconActive,
-  //                   color: Colors.white,
-  //                 )
-  //               : Icon(
-  //                   nonActiveIcon,
-  //                   color: Colors.grey,
-  //                 ),
-  //           const SizedBox(
-  //             height: 4,
-  //           ),
-  //           Text(text,
-  //               style: const TextStyle(color: Colors.white, fontSize: 12))
-  //         ],
-  //       ),
-  //     ),
-  //   );
-  // }
 }
-
-// buildNavbarItems(
-//                     size, Icons.auto_graph_sharp, Icons.auto_graph, "Hasil", 0),
-//                 buildNavbarItems(
-//                     size, Icons.people_alt, Icons.people, "Dpt", 1),
-//                 buildNavbarItems(
-//                     size, Icons.verified, Icons.verified, "Voting", 2),
-//                 buildNavbarItems(
-//                     size, Icons.person, Icons.person, "profile", 3),
-//                 buildNavbarItems(
-//                     size, Icons.apps_outage, Icons.apps_outage, "Tentang", 4)

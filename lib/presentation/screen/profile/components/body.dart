@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
               top: 20,
               bottom: 10,
             ),
-            color: const Color(0XFF214DEA),
+            color: const Color(0XFF19A7CE),
             height: size.height,
             width: size.width,
             child: Column(

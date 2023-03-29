@@ -32,7 +32,7 @@ class _BodyState extends State<Body> {
                     Text(
                       "Good Morning",
                       style: TextStyle(
-                          color: Color(0XFFCFCFCF),
+                          color: Color(0XFFFFFFFF),
                           fontSize: 14,
                           fontWeight: FontWeight.bold),
                     ),
@@ -89,7 +89,7 @@ class _BodyState extends State<Body> {
                     Container(
                       width: size.width,
                       decoration: BoxDecoration(
-                        color: const Color(0XFF214DEA),
+                        color: const Color(0XFF19A7CE),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: Padding(
@@ -100,7 +100,7 @@ class _BodyState extends State<Body> {
                             Row(
                               children: [
                                 CircleAvatar(
-                                  backgroundColor: const Color(0XFFEDFF1D),
+                                  backgroundColor: const Color(0XFF05FF00),
                                   child: Container(
                                     width: 33,
                                     height: 33,

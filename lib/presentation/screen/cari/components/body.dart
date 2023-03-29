@@ -38,7 +38,7 @@ class _BodyState extends State<Body> {
                     vertical: size.height * 0.01,
                     horizontal: size.width * 0.05),
                 decoration: BoxDecoration(
-                  color: const Color(0XFF214DEA),
+                  color: const Color(0XFF19A7CE),
                   borderRadius: BorderRadius.circular(15),
                 ),
                 width: size.width,

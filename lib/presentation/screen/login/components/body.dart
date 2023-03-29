@@ -13,13 +13,13 @@ class Body extends StatelessWidget {
           Center(
             child: Image.asset("assets/logo/logos.png"),
           ),
-          SizedBox(
-            height: size.height * 0.08,
-          ),
-          SizedBox(
-            width: size.width * 0.5,
-            height: size.height * 0.3,
-            child: Image.asset("assets/images/login-image.png"),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: size.height * 0.04),
+            child: SizedBox(
+              width: size.width * 0.7,
+              height: size.height * 0.3,
+              child: Image.asset("assets/images/aset1.png"),
+            ),
           ),
           Expanded(
             child: Container(
@@ -48,7 +48,7 @@ class Body extends StatelessWidget {
                             width: 40,
                             height: 40,
                             decoration: const BoxDecoration(
-                              color: Color(0XFF214DEA),
+                              color: Color(0XFF19A7CE),
                               shape: BoxShape.circle,
                             ),
                             child: const Icon(
@@ -64,7 +64,7 @@ class Body extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w500,
-                              color: Color(0XFF214DEA)),
+                              color: Color(0XFF19A7CE)),
                         )
                       ],
                     ),
@@ -139,7 +139,7 @@ class Body extends StatelessWidget {
                           width: size.width,
                           height: size.height * 0.06,
                           decoration: BoxDecoration(
-                            color: const Color(0XFF214DEA),
+                            color: const Color(0XFF19A7CE),
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: const Text(
@@ -174,7 +174,7 @@ class Body extends StatelessWidget {
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0XFF214DEA)),
+                                      color: Color(0XFF19A7CE)),
                                 ))
                           ],
                         ))

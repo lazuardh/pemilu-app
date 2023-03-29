@@ -7,9 +7,9 @@ class VotingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0XFF214DEA),
+      backgroundColor: const Color(0XFF19A7CE),
       appBar: AppBar(
-        backgroundColor: const Color(0XFF214DEA),
+        backgroundColor: const Color(0XFF19A7CE),
         centerTitle: true,
         elevation: 0,
         title: const Text(

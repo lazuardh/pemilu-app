@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pemilihan_umum_apk/presentation/route/page_name.dart';
+import 'package:pemilihan_umum_apk/presentation/screen/onBoarding/components/build_content.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Body extends StatefulWidget {
@@ -29,57 +30,99 @@ class _BodyState extends State<Body> {
             children: [
               SizedBox(
                 width: size.width,
-                height: size.height * 0.4,
-                child: PageView(
-                  controller: controller,
-                  children: [
-                    Image.asset("assets/images/onBorading3.png"),
-                  ],
-                ),
+                height: size.height * 0.46,
               ),
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.only(top: size.height * 0.06),
                   width: size.width,
                   decoration: BoxDecoration(
-                      color: const Color(0XFFFFFFFF),
+                      color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(size.height * 0.05),
                         topRight: Radius.circular(size.height * 0.05),
                       )),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: size.width * 0.05,
-                        vertical: size.height * 0.07),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Selamat Datang,\nDi Aplikasi Pemilu!",
-                          style: TextStyle(
-                              fontSize: 26,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF000000)),
-                        ),
-                        SizedBox(height: size.height * 0.02),
-                        const Text(
-                          "Apakah Kamu tau aplikasi pemilu ?",
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Color(0xFF000000),
-                          ),
-                        ),
-                        SizedBox(height: size.height * 0.02),
-                        const Text(
-                          "sebuah system yang digunakan untuk memudahkan masyarakat dalam melakukan pemilihan umum.",
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Color(0xFF000000),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                 ),
+              ),
+            ],
+          ),
+          PageView(
+            controller: controller,
+            children: [
+              BuildContent(
+                onTap: () {
+                  if (index == 0) {
+                    setState(() {
+                      index++;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  } else {
+                    setState(() {
+                      index = 1;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  }
+                },
+                size: size,
+                images: "assets/images/aset1.png",
+                title: "Selamat Datang,\nDi Aplikasi Pemilu",
+                subtitle: "Apakah kamu tau aplikasi pemilu?",
+                content:
+                    "Sebuah sistem yang digunakan untuk memeudahkan masyarakat dalam melakukan pemilihan umum",
+              ),
+              BuildContent(
+                onTap: () {
+                  if (index == 1) {
+                    setState(() {
+                      index++;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  } else {
+                    setState(() {
+                      index = 2;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  }
+                },
+                size: size,
+                images: "assets/images/aset2.png",
+                title: "Selamat Datang,\nDi Aplikasi Pemilu",
+                subtitle: "Apakah kamu tau aplikasi pemilu?",
+                content:
+                    "Sebuah sistem yang digunakan untuk memeudahkan masyarakat dalam melakukan pemilihan umum",
+              ),
+              BuildContent(
+                onTap: () {
+                  if (index == 2) {
+                    setState(() {
+                      index++;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  } else {
+                    setState(() {
+                      index = 3;
+                    });
+                    controller.animateToPage(index,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.easeIn);
+                  }
+                },
+                size: size,
+                images: "assets/images/aset3.png",
+                title: "Selamat Datang,\nDi Aplikasi Pemilu",
+                subtitle: "Apakah kamu tau aplikasi pemilu?",
+                content:
+                    "Sebuah sistem yang digunakan untuk memeudahkan masyarakat dalam melakukan pemilihan umum",
               )
             ],
           ),
@@ -94,7 +137,7 @@ class _BodyState extends State<Body> {
                 effect: const ExpandingDotsEffect(
                   spacing: 5,
                   dotColor: Color(0XFF5D5D5E),
-                  activeDotColor: Color(0XFF214DEA),
+                  activeDotColor: Color(0XFF19A7CE),
                   dotWidth: 12,
                   dotHeight: 8,
                 ),
@@ -111,7 +154,7 @@ class _BodyState extends State<Body> {
               child: Container(
                 width: size.width * 0.35,
                 decoration: BoxDecoration(
-                    color: const Color(0XFF214DEA),
+                    color: const Color(0XFF19A7CE),
                     borderRadius: BorderRadius.circular(25)),
                 child: const Padding(
                   padding: EdgeInsets.all(15.0),

@@ -74,14 +74,14 @@ class _BodyState extends State<Body> {
                     Container(
                       width: size.width,
                       decoration: BoxDecoration(
-                          border: Border.all(color: const Color(0XFF214DEA)),
+                          border: Border.all(color: const Color(0XFF19A7CE)),
                           borderRadius: BorderRadius.circular(10)),
                       child: TextFormField(
                         decoration: const InputDecoration(
                           hintText: 'Masukan NIK kamu',
                           border: InputBorder.none,
                           prefixIcon: Icon(Icons.article_rounded,
-                              color: Color(0XFF214DEA)),
+                              color: Color(0XFF19A7CE)),
                           isDense: false,
                           isCollapsed: false,
                         ),
@@ -96,14 +96,14 @@ class _BodyState extends State<Body> {
                     Container(
                       width: size.width,
                       decoration: BoxDecoration(
-                          border: Border.all(color: const Color(0XFF214DEA)),
+                          border: Border.all(color: const Color(0XFF19A7CE)),
                           borderRadius: BorderRadius.circular(10)),
                       child: TextFormField(
                         decoration: const InputDecoration(
                           hintText: 'Masukan nama kamu',
                           border: InputBorder.none,
                           prefixIcon:
-                              Icon(Icons.person, color: Color(0XFF214DEA)),
+                              Icon(Icons.person, color: Color(0XFF19A7CE)),
                           isDense: false,
                           isCollapsed: false,
                         ),
@@ -118,14 +118,14 @@ class _BodyState extends State<Body> {
                     Container(
                       width: size.width,
                       decoration: BoxDecoration(
-                          border: Border.all(color: const Color(0XFF214DEA)),
+                          border: Border.all(color: const Color(0XFF19A7CE)),
                           borderRadius: BorderRadius.circular(10)),
                       child: TextFormField(
                         decoration: const InputDecoration(
                           hintText: 'Tempat pemilihan surat',
                           border: InputBorder.none,
                           prefixIcon: Icon(Icons.add_location_alt,
-                              color: Color(0XFF214DEA)),
+                              color: Color(0XFF19A7CE)),
                           isDense: false,
                           isCollapsed: false,
                         ),
@@ -136,7 +136,7 @@ class _BodyState extends State<Body> {
                       width: size.width,
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: const Color(0XFF214DEA),
+                        color: const Color(0XFF19A7CE),
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: const Center(

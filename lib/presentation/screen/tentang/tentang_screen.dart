@@ -9,7 +9,7 @@ class TentangScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0XFF214DEA),
+        backgroundColor: const Color(0XFF19A7CE),
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(size.height * 0.1),

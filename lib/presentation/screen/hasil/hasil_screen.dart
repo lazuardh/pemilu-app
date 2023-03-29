@@ -7,7 +7,7 @@ class HasilScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0XFF214DEA),
+      backgroundColor: Color(0XFF19A7CE),
       body: Body(),
     );
   }
